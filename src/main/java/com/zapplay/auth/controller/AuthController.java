@@ -33,7 +33,7 @@ import com.zapplay.auth.service.UserService;
 @RestController
 @RequestMapping("/auth")
 
-@CrossOrigin(origins = "*")
+@CrossOrigin
 public class AuthController {
 
 	private final SecurityConfig securityConfig;

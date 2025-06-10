@@ -11,7 +11,7 @@ import io.jsonwebtoken.Claims;
 
 @RestController
 @RequestMapping("/auth")
-@CrossOrigin(origins = "*")
+@CrossOrigin
 
 
 
