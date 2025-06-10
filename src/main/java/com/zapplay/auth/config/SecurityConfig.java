@@ -45,8 +45,10 @@ public class SecurityConfig {
 	public CorsConfigurationSource corsConfigurationSource() {
 		CorsConfiguration config = new CorsConfiguration();
 
-		config.setAllowedOrigins(List.of("http://127.0.0.1:5500", "http://localhost:5500","http://192.168.1.8:5500")); // Frontend origin
+//		config.setAllowedOrigins(List.of("http://127.0.0.1:5500", "http://localhost:5500","http://192.168.1.8:5500")); // Frontend origin
 		config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+		config.setAllowedOrigins(List.of("*")); // Not secure for production
+
 		config.setAllowedHeaders(List.of("*"));
 		config.setAllowCredentials(true); // Send cookies like JSESSIONID
 
