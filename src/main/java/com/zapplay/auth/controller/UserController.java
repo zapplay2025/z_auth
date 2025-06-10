@@ -19,7 +19,9 @@ import jakarta.websocket.server.PathParam;
 
 @RestController
 @RequestMapping("/home/users")
-@CrossOrigin(originPatterns = "*")
+@CrossOrigin(origins = "*")
+
+
 
 public class UserController {
 	
